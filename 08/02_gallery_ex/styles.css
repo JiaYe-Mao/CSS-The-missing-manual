@@ -63,6 +63,25 @@ p {
 	font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
 	margin: 10px 8px;
 }
+figure{
+	display: inline-block;
+	vertical-align: top;
+	width: 210px;
+	margin: 0 10px 10px 10px;
+
+}
+figure img{
+	border: 1px solid #666;
+	background-color: #FFF;
+	padding: 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+figcaption{
+	font: 1.1em Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
 .copyright {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 1em;
