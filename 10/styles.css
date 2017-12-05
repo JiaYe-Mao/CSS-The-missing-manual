@@ -42,7 +42,7 @@ header {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 10px 0 30px 0;	
+	padding: 10px 0 30px 0;
 	text-align: right;
 	position: relative;
 }
@@ -50,7 +50,7 @@ header {
 .logo {
 	position: absolute;
 	z-index: 100;
-	left: 0;	
+	left: 0;
 }
 header h1 {
 	font-size: 2.2em;
@@ -59,7 +59,7 @@ header h1 {
 }
 
 nav {
-	margin-left: 200px;	
+	margin-left: 200px;
 }
 
 nav li {
@@ -82,6 +82,34 @@ nav a {
 }
 
 /* your styles here */
+nav a{
+	-webkit-transition: -webkit-transform .5s,
+	background-color 1s ease-in;
+	transition: transform .5s,
+	background-color 1s ease-in;
+}
+nav a:hover{
+	background-color: red;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+@-webkit-keyframes logo {
+	from{
+		-webkit-transform: rotate(0) scale(.5);
+		left: 120%;
+	}
+	50%{
+		-webkit-transform: rotate(-720deg) scale(1);
+		left: 0;
+	}
+	to{
+		-webkit-transform: rotate(0) scale(1);
+	}
+}
+.logo {
+	-webkit-animation: logo 2s;
+}
 
 
 
